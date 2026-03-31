@@ -1,0 +1,47 @@
+/* Hacker theme overrides */
+:root {
+  --slidev-theme-background: #000000;
+  --slidev-theme-primary: #00ff41;
+  --background: #000000 !important;
+}
+
+#slide-content,
+.slidev-layout {
+  background-color: #000000 !important;
+  color: #c8c8c8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00ff41 !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  text-shadow: 0 0 8px rgba(0, 255, 65, 0.5);
+}
+
+.slidev-layout.cover h1,
+.slidev-layout.cover h2 {
+  color: #00ff41 !important;
+  text-shadow: 0 0 12px rgba(0, 255, 65, 0.7);
+}
+
+strong {
+  color: #00ff41 !important;
+}
+
+a {
+  color: #00ccff !important;
+}
+
+/* Code blocks */
+.slidev-code, pre, code {
+  background-color: #0d0d0d !important;
+  color: #00ff41 !important;
+}
+
+.no-header-table table thead {
+  display: none;
+}
+
+/* Navigation and controls */
+.slidev-nav {
+  color: #00ff41;
+}

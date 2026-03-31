@@ -2,7 +2,6 @@
 theme: dracula
 title: Make Cybersecurity Fun
 info: Host Your Own Security-Themed Hackathon
-transition: slide-left
 author: Artem Makarov
 layout: cover
 class: text-center
@@ -18,7 +17,7 @@ Artem Makarov · VoxxedDays Amsterdam · 01 April 2025
 
 ---
 layout: image-left
-image: images/artem.jpg
+image: /images/artem.jpg
 ---
 
 # About Me
@@ -33,23 +32,25 @@ DIY Enthusiast
 
 ---
 layout: image-right
-image: images/closing.jpg
+image: /images/closing.jpg
 ---
 
 # The Spark
 
-How to make cybersecurity fun and engaging for developers?
+**Most developers' relationship with cybersecurity is very abstract**
 
-Organize a hackathon :-)
+- CI scanners
+- Jira ticket "URGENT: Fix CVE"
+- Mandatory secure development module
+
+**Is there any way to make learning about security fun?**
+
+Organize a CTF hackathon :-)
 
 <!--
-Developers mostly hear about cybersecurity in the abstract — but rarely get hands-on experience.
+At our consultancy, we run annual hackathons — a few days to build something fun and learn something new.
 
-We wanted to change that.
-Make it engaging, fun and memorable.
-
-So we organized a CTF hackathon
-
+Last time, we asked: *what if we made it about security?*
 -->
 
 ---
@@ -58,18 +59,19 @@ layout: default
 
 # What Is CTF?
 
-## Capture The Flag
+### Capture The Flag
 
 Cybersecurity competition where you try to find hidden “flags” and earn points
 
-## What is a flag?
+### What is a flag?
 
-Flag is (typically) a small piece of text, example: 
+Flag is (typically) a small piece of text, example:
 `v0xx3dCTF{my_f1rst_fl4g}`
 
-## How can you find the flag?
+### How can you find the flag?
 
 Depends on the type of challenge
+
 - Break the program and get it to return the flag
 - Find it hidden/encoded in a file
 - Try to get access to `flag.txt`
@@ -98,17 +100,17 @@ Your favorite vulnerabilities: SQL injections, path traversal, XSS, etc.
 
 ## Cryptography & Hashing
 
-Weak crypto, poor secrets
+Not all encryption is equal
 
 ::right::
 
 ## Binary exploitation
 
-Assembly or Bust: buffer overflows, ROP chains, etc.
+Low-level stuff: buffer overflows, ROP chains, etc.
 
 ## Reverse Engineering
 
-You get a binary and need to understand how it works
+Just like reading your colleague's code
 
 ## Forensics
 
@@ -126,70 +128,71 @@ layout: two-cols-header
 
 # Choosing a Platform
 
+Platform provides team and challenge management and scoreboard.
+
 ::right::
 
 ## Alternatives
 
 End-to-End SaaS platforms (HackTheBox, TryHackMe, Traboda)
 
-- <solar-clipboard-check-linear class="text-green-700" />  Come with the challenges
-- <solar-clipboard-check-linear class="text-green-700" />  Easy setup
-- <solar-clipboard-remove-linear class="text-red-700" />  Pricey
+- <solar-clipboard-check-linear class="text-[#00ff41]" />  Come with the challenges
+- <solar-clipboard-check-linear class="text-[#00ff41]" />  Easy setup
+- <solar-clipboard-remove-linear class="text-[#ff4444]" />  Pricey
 
 ::left::
 
-## CTFd (https://ctfd.io)
+## CTFd
 
-- <solar-clipboard-check-linear class="text-green-700" />  Open source
-- <solar-clipboard-check-linear class="text-green-700" />  Own hosting or SaaS
-- <solar-clipboard-check-linear class="text-green-700" />  Decent admin interface
-- <solar-clipboard-check-linear class="text-green-700" />  Challenge hosting orchestration
-- <solar-clipboard-remove-linear class="text-red-700" />  No built-in challenges
-- <solar-clipboard-remove-linear class="text-red-700" />  Requires manual setup
+- <solar-clipboard-check-linear class="text-[#00ff41]" />  Open source
+- <solar-clipboard-check-linear class="text-[#00ff41]" />  Own hosting or SaaS
+- <solar-clipboard-check-linear class="text-[#00ff41]" />  Decent admin interface
+- <solar-clipboard-check-linear class="text-[#00ff41]" />  Challenge hosting orchestration
+- <solar-clipboard-remove-linear class="text-[#ff4444]" />  No built-in challenges
+- <solar-clipboard-remove-linear class="text-[#ff4444]" />  Requires manual setup
 
-<!--
-Platform to:
-- host challenges
-- manage teams
-- track scores
--->
-
+---
+layout: default
+class: no-header-table
 ---
 
 # Anatomy of a Challenge
 
-|                                                                            |                                                                                                  |
-|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <solar-alt-arrow-right-bold class="text-green-700" /> **Category**         | e.g. Web Exploits                                                                                |
-| <solar-alt-arrow-right-bold class="text-green-700" /> **Task name**        | Doctor's Office                                                                                  |
-| <solar-alt-arrow-right-bold class="text-green-700" /> **Task Description** | The doctor's office has updated their website. Can you make an appointment?                      |
-| <solar-alt-arrow-right-bold class="text-green-700" /> **Attachments**      | Files to analyze (source code, configs, binaries)                                                |
-| <solar-alt-arrow-right-bold class="text-green-700" /> **Host / Website**   | Optional — a live target to exploit                                                              |
-| <solar-alt-arrow-right-bold class="text-green-700" /> **Points**           | e.g. 50-100-250-500                                                                              |
-| <solar-alt-arrow-right-bold class="text-green-700" /> **Hints**            | **Hint 1:** Look at the input validation...<br>**Hint 2:** What happens with special characters? 
-| <solar-alt-arrow-right-bold class="text-green-700" /> **Flag**             | `CTF{1nj3ct10ns_1n_my_sql}`                                                                      
+|                      |                                                                                                  |
+|----------------------|--------------------------------------------------------------------------------------------------|
+| **Category**         | Web Exploits                                                                                     |
+| **Task name**        | Doctor's Office                                                                                  |
+| **Task Description** | The doctor's office has updated their website.<br>Can you make an appointment?                  |
+| **Attachments**      | Files to analyze (source code, configs, binaries)                                                |
+| **Host / Website**   | Optional — a live target to exploit                                                              |
+| **Points**           | e.g. 50-100-250-500                                                                              |
+| **Hints**            | **Hint 1:** Look at the input validation...<br>**Hint 2:** What happens with special characters? 
+| **Flag**             | `CTF{1nj3ct10ns_1n_my_sql}`                                                                      
 
 ---
 layout: two-cols-header
 ---
+
 # DIY vs. Ready-Made Challenges
 
 ::left::
 
 ## Create Your Own
 
-- <solar-clipboard-check-linear class="text-green-700" /> Tailored to your tech stack
-- <solar-clipboard-remove-linear class="text-red-700" /> More effort to build
+- <solar-clipboard-check-linear class="text-[#00ff41]" /> Tailored to your tech stack
+- <solar-clipboard-remove-linear class="text-[#ff4444]" /> More effort to build*
 
 ::right::
 
 ## Ready-Made
 
 Some CTFs publish their challenges (e.g. PicoCTF)
-- <solar-clipboard-check-linear class="text-green-700" /> Low effort
-- <solar-clipboard-remove-linear class="text-red-700" /> May not match your context
+
+- <solar-clipboard-check-linear class="text-[#00ff41]" /> Low effort
+- <solar-clipboard-remove-linear class="text-[#ff4444]" /> May not match your context
 
 <!--
+You know what's really good a making vulnerabilities? AI
 Our approach: mix of both — custom challenges for your stack + curated ones for variety
 -->
 
@@ -202,6 +205,7 @@ layout: two-cols-header
 Pick the right tool for each challenge
 
 ::left::
+
 ### CTFd Container Runtime
 
 CTFd offers Docker image & container hosting.
@@ -215,6 +219,7 @@ For static website challenges.
 **<solar-money-bag-linear />:** Free | **<solar-sledgehammer-linear />:** Low
 
 ::right::
+
 ### Self-hosted* VMs/Kubernetes
 
 Can accomodate more complex challenges.
@@ -276,7 +281,7 @@ layout: two-cols-header
 ## What Worked
 
 - Everyone loved the competitive format
-- All challenges were completed
+- No unsolved challenges
 - Great learning experience
 
 ::right::
@@ -289,8 +294,11 @@ layout: two-cols-header
 ---
 layout: default
 ---
+
 # Useful resources
+
 ## General links
+
 - CTF tutorial https://primer.picoctf.org
 - CTF handbook https://ctf101.org
 - PicoCTF: CMU CTF & challenge archive https://picoctf.org
@@ -310,6 +318,7 @@ layout: two-cols-header
 # Q&A
 
 ::left::
+
 ## Contact me
 
 Bluesky: [@artemy.nl](https://bsky.app/profile/artemy.nl)
@@ -318,19 +327,19 @@ LinkedIn: https://linkedin.com/in/artemy
 
 Email: [artem@codenomads.nl](mailto:artem@codenomads.nl)
 
-
 Please rate my talk
 
 <Transform :scale="0.5" origin="top center">
 
-![Rate my talk](./images/rate-talk.png)
+![Rate my talk](/images/rate-talk.png)
 </Transform>
 
 ::right::
 
 ## Slides
+
 <Transform :scale="0.8" origin="top center">
 
-![Slides](./images/slides.png)
+![Slides](/images/slides.png)
 *https://github.com/artemy/host-your-own-ctf-hackathon*
 </Transform>
