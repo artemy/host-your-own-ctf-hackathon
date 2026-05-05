@@ -12,7 +12,7 @@ class: text-center
 ## Host Your Own Security-Themed Hackathon
 
 <div class="absolute bottom-30px right-30px text-center">
-Artem Makarov · VoxxedDays Amsterdam · 01 April 2025
+Artem Makarov · Devoxx UK · 07 May 2026
 </div>
 
 ---
