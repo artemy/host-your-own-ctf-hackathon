@@ -12,7 +12,7 @@ class: text-center
 ## Host Your Own Security-Themed Hackathon
 
 <div class="absolute bottom-30px right-30px text-center">
-Artem Makarov · Devoxx UK · 07 May 2026
+Artem Makarov · Devoxx Poland · 17 June 2026
 </div>
 
 ---
@@ -31,21 +31,19 @@ Open source contributor
 DIY Enthusiast
 
 ---
-layout: image-right
-image: /images/closing.jpg
+layout: default
 ---
 
-# The Spark
+# Cybersecurity is boring
 
-**Most developers' relationship with cybersecurity is very abstract**
-
+Most developers' relationship with cybersecurity is very abstract: 
 - CI scanners
 - Jira ticket "URGENT: Fix CVE"
-- Mandatory secure development module
+- Mandatory secure development training
 
-**Is there any way to make learning about security fun?**
+## How to make learning about security fun?
 
-Organize a CTF hackathon :-)
+See it from the other side as a hacker :-)
 
 <!--
 At our consultancy, we run annual hackathons — a few days to build something fun and learn something new.
@@ -299,6 +297,7 @@ layout: default
 
 ## General links
 
+- CTF events https://ctftime.org
 - CTF tutorial https://primer.picoctf.org
 - CTF handbook https://ctf101.org
 - PicoCTF: CMU CTF & challenge archive https://picoctf.org
