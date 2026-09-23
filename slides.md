@@ -12,7 +12,7 @@ class: text-center
 ## Host Your Own Security-Themed Hackathon
 
 <div class="absolute bottom-30px right-30px text-center">
-Artem Makarov · Devoxx Poland · 17 June 2026
+Artem Makarov · BeJUG Meetup · 24 September 2026
 </div>
 
 ---
@@ -28,7 +28,7 @@ Principal Engineer @ Code Nomads
 
 Open source contributor
 
-DIY Enthusiast
+DIY Electronics Enthusiast
 
 ---
 layout: default
@@ -325,13 +325,6 @@ Bluesky: [@artemy.nl](https://bsky.app/profile/artemy.nl)
 LinkedIn: https://linkedin.com/in/artemy
 
 Email: [artem@codenomads.nl](mailto:artem@codenomads.nl)
-
-Please rate my talk
-
-<Transform :scale="0.5" origin="top center">
-
-![Rate my talk](/images/rate-talk.png)
-</Transform>
 
 ::right::
 
