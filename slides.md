@@ -12,7 +12,7 @@ class: text-center
 ## Host Your Own Security-Themed Hackathon
 
 <div class="absolute bottom-30px right-30px text-center">
-Artem Makarov · BeJUG Meetup · 24 September 2026
+Artem Makarov · ArhnemJUG Meetup · 29 October 2026
 </div>
 
 ---
@@ -64,7 +64,7 @@ Cybersecurity competition where you try to find hidden “flags” and earn poin
 ### What is a flag?
 
 Flag is (typically) a small piece of text, example:
-`v0xx3dCTF{my_f1rst_fl4g}`
+`arnh3mCTF{my_f1rst_fl4g}`
 
 ### How can you find the flag?
 
