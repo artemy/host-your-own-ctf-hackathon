@@ -12,7 +12,7 @@ class: text-center
 ## Host Your Own Security-Themed Hackathon
 
 <div class="absolute bottom-30px right-30px text-center">
-Artem Makarov · ArhnemJUG Meetup · 29 October 2026
+Artem Makarov · Arnhem Meetup · 29 October 2026
 </div>
 
 ---
